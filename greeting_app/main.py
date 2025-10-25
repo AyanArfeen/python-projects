@@ -2,11 +2,7 @@
 
 print("Welcome to our Program!!!")
 # Take name input
-try:
-    name = str(input("What your's name?: ")).strip().title()
-except ValueError:
-    print("Enter only your name.")
-    exit()
+name = str(input("What your's name?: ")).strip().title()
 
 # Print message
 print(f"\nHi, {name}!!\n")
