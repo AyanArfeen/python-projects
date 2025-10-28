@@ -2,7 +2,8 @@
 import math
 
 while True:
-    shape = input("Which shape's area do you want to find?\n1. Circle\n2. Rectangle\n3. Triangle\nOr (type 'q' to quit): ")
+    shape = input("\nWhich shape's area do you want to find?\n1. Circle\n2. Rectangle\n3. Triangle\nOr (type 'q' to quit): ")
+    unit = input("Enter unit (Like cm or m): ").strip()
     if shape.lower() == 'q':
         break
 
@@ -43,5 +44,5 @@ while True:
         continue
 
     print("-" * 40)
-    print(f"The Area is: {calculations:.2f}")
+    print(f"The Area is: {calculations:.2f} {unit}²")
     print("-" * 40)
