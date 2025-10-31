@@ -7,17 +7,22 @@ while True:
     try:
         a = int(input("Type your first number: "))
         b = int(input("Type your second number: "))
+        method = int(input("Choose swap method:\n1. Arithmetic (no temp variable)\n2. Pythonic (tuple unpacking)\n--> "))
     
     except ValueError:
         print("Please enter only Numbers!!")
         continue
 
-    print(f"\nBefore swapping: a = {a}, b = {b}")
+    print(f"\nBefore swapping: a = {a}, b = {b}\n")
     
-    # Swap logic (arithmetic method)
-    a = a + b
-    b = a - b
-    a = a - b
+    if method == 1:
+        # Swap logic (arithmetic method)
+        a = a + b
+        b = a - b
+        a = a - b
+
+    else:
+        a, b = b, a
 
     print("-" * 40)
     print(f"After swapping: a = {a}, b = {b}")
