@@ -15,14 +15,19 @@ while True:
 
     print(f"\nBefore swapping: a = {a}, b = {b}\n")
     
-    if method == 1:
-        # Swap logic (arithmetic method)
-        a = a + b
-        b = a - b
-        a = a - b
+    def swap_numbers(a, b, method=1):
+        if method == 1:
+            # Swap logic (arithmetic method)
+            a = a + b
+            b = a - b
+            a = a - b
 
-    else:
-        a, b = b, a
+        else:
+            a, b = b, a
+        
+        return a, b
+    
+    a, b = swap_numbers(a, b, method)
 
     print("-" * 40)
     print(f"After swapping: a = {a}, b = {b}")
