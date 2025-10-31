@@ -1,4 +1,5 @@
-# This programs swap numbers 
+# This program swaps two numbers without using a third variable
+
 while True:
     print("\nThis program let you swap numbers.")
 
@@ -11,13 +12,11 @@ while True:
         print("Please enter only Numbers!!")
         continue
 
-    print(f"\n---> Thats your number one: {a} and number two: {b}")
+    print(f"\nBefore swapping: a = {a}, b = {b}")
     
-    if a and b >= 0:
-        a1 = a + b
-        b1 = a1 - b
-        a2 = a1 - b1
-        print(f"Your swapped values is Number one: {a2} and Number two: {b1}")
+    # Swap logic (arithmetic method)
+    a = a + b
+    b = a - b
+    a = a - b
 
-    else:
-        print("This is minus values")
+    print(f"After swapping: a = {a}, b = {b}")
