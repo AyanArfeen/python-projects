@@ -17,7 +17,7 @@ while True:
     computer = random.choice(["rock", "paper", "scissors"])
 
     print()
-    print(f"You choosed {user_choice.capitalize()}! and Computer choosed {computer.capitalize()}!")
+    print(f"You chose {user_choice.capitalize()}! and Computer chose {computer.capitalize()}!")
 
     if user_choice == computer:
         print("Draw!")
