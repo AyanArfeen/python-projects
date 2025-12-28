@@ -13,10 +13,11 @@ while True:
             print("--> Invalid! Enter numbers only.\n")
 
     for i in range(second, -1, -1):
-        print(f"Time left: {i} seconds")
+        mins, secs = divmod(i, 60)
+        print(f"\rTime Left: {mins:02d}:{secs:02d}", end="", flush=True)
         time.sleep(1)
 
-    print("Time’s up!")
+    print("\nTime’s up!")
 
     print()
     choice = input("Do you want to create another timer? (y/n): ").strip().lower()
